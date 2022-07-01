@@ -2,12 +2,12 @@
 /*
 
 لتغير حقوق اذا تنشر 
-By : @D_C_D_D
+By : @n_n_v
 
 */
 
 ob_start();
-$token = '5103049162:AAE49wuhia1kV7X81wjujdVLbrMOGWw6BxM';
+$token = '5555289813:AAGCy6Al2Q9oPZo9hYe28Hhgbg6wb7GjQBE';
 define('API_KEY',$token);
 echo "انسى";
 function bot($method,$datas=[]){
@@ -144,11 +144,11 @@ if($chat_id == $admin){
     save($sales);
    }
   }
-  $status = bot('getChatMember',['chat_id'=>'@D_C_D_D','user_id'=>$chat_id])->result->status;
+  $status = bot('getChatMember',['chat_id'=>'@n_n_v','user_id'=>$chat_id])->result->status;
   if($status == 'left'){
    bot('sendMessage',[
        'chat_id'=>$chat_id,
-       'text'=>"- لا تستطيع بدء استخدام البوت الا بعد الاشتراك بقناة البوت 🚫' @D_C_D_D",
+       'text'=>"- لا تستطيع بدء استخدام البوت الا بعد الاشتراك بقناة البوت 🚫' @C_P_8",
        'reply_to_message_id'=>$message->message_id,
    ]);
    exit();
@@ -169,7 +169,7 @@ if($chat_id == $admin){
     'inline_keyboard'=>[
      [['text'=>'- العروض التي يقدمها البوت ، ✨','callback_data'=>'sales']],
      [['text'=>'• تجميع النقاط ، 💸','callback_data'=>'col']],
-     [['text'=>'~ تابعنا 🧨.','url'=>'https://t.me/D_C_D_D']]
+     [['text'=>'~ تابعنا 🧨.','url'=>'https://t.me/C_P_8']]
     ] 
    ])
   ]);
@@ -183,7 +183,7 @@ if($chat_id == $admin){
 
 https://t.me/'.$me.'?start='.$chat_id.'
 💰- اذا كانت طريقه التجميع مستحيله لديك يمكنك مراسله المطور وشراء النقاط ✨
-🥀 - @D_C_D_D',
+🥀 - @C_P_8',
   ]);
  }elseif($data == 'sales'){
   $reply_markup = [];
@@ -207,7 +207,7 @@ https://t.me/'.$me.'?start='.$chat_id.'
   bot('editMessageText',[
    'chat_id'=>$chat_id,
    'message_id'=>$message_id,
-   'text'=>"- تم ارسال طلبك لمالك البوت ، ✨\nقم بمراسلته لينفذ طلبك ... @D_C_D_D - @D_C_D_D"
+   'text'=>"- تم ارسال طلبك لمالك البوت ، ✨\nقم بمراسلته لينفذ طلبك ... @n_n_v - @n_n_v"
   ]);
   bot('sendmessage',[
    'chat_id'=>$admin,
@@ -246,8 +246,8 @@ https://t.me/'.$me.'?start='.$chat_id.'
    }
  }
 }
-# @D_C_D_D #
-$ary = array(299938224,); # <<<== ايديك + ايديات الادمنية  #
+# @n_n_v #
+$ary = array(1041483862,); # <<<== ايديك + ايديات الادمنية  #
 $id = $message->from->id;
 $admins = in_array($id,$ary);
 $data = $update->callback_query->data;
@@ -403,4 +403,4 @@ if ($update && !in_array($id, $cut)) {
        ]);
     }
 
-# @D_C_D_D #
+# @n_n_v #
